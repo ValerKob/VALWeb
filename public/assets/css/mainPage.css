@@ -174,7 +174,7 @@
 
 /* Right Info BLog */
 .infoRight {
-    margin-top: -100px;
+    margin-top: -190px;
     padding-left: 190px;
 
     cursor: pointer;
@@ -191,7 +191,7 @@
     height: 400px;
     border-radius: 29% 71% 71% 29% / 36% 30% 70% 64%;
 
-    animation: ellipse 11s ease-in-out infinite;
+    animation: ellipse 7s linear infinite;
 }
 
 .infoEllipse:before {
@@ -234,7 +234,7 @@
     border-radius: 29% 71% 71% 29% / 36% 30% 70% 64%;
     overflow: hidden;
 
-    animation: ellipse 11s ease-in-out infinite;
+    animation: ellipse 7s linear infinite;
 }
 
 .infoEllipseImg {

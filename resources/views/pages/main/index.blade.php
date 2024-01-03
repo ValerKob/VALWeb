@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <img class="svgTitle" src="./assets/images/glav3.svg" alt="">
+    <img class="svgTitle" src="./assets/images/glav4.svg" alt="">
 </section>
 {{-- EGlav Blog --}}
 @endsection
