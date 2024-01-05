@@ -9,10 +9,10 @@
                 <ul>
                     <li><a class="active" href="#main">Главная</a></li>
                     <li><a href="#about">Кто&nbsp;я?</a></li>
-                    <li><a href="">Кейсы</a></li>
-                    <li><a href="">Мой&nbsp;услуги</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="#services">Мой&nbsp;услуги</a></li>
                     {{-- <li><a href="">Новости</a></li> --}}
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
         </div>

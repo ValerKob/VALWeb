@@ -696,3 +696,316 @@ Card
     border-top: 2px solid rgba(29, 26, 210, 1) !important;
     border-right: 2px solid rgba(29, 26, 210, 1) !important;
 }
+
+/* 
+
+SixBlog 
+
+*/
+.sixBlog {
+    width: 100%;
+    height: 1700px;
+    background-color: #121212;
+}
+
+.services {
+    padding: 100px 190px;
+}
+
+.servicesRow {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.servicesTitle {
+    color: #f3f3f3;
+    font-size: 36px;
+}
+
+.servicesInfoText {
+    max-width: 500px;
+
+    color: #828282;
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+.servicesInfoText:last-child {
+    margin-bottom: 0;
+}
+
+.servicesInfoText span {
+    background: #121fcf;
+    background: linear-gradient(
+        88deg,
+        rgba(252, 0, 255, 1) 3%,
+        rgba(29, 26, 210, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servicesColTypes {
+    width: 100%;
+    width: 500px;
+}
+
+.servicesColType {
+    margin-bottom: 100px;
+}
+
+.servicesColType:last-child {
+    margin-bottom: 0;
+}
+
+.servicesColTypeTitle {
+    color: #f3f3f3;
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.servicesColTypeContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesColText {
+    color: #828282;
+    font-size: 16px;
+}
+
+.servicesColPrice {
+    text-align: end;
+}
+
+.servicesColPrice {
+    font-size: 36px;
+
+    background: #121fcf;
+    background: linear-gradient(
+        88deg,
+        rgba(252, 0, 255, 1) 3%,
+        rgba(29, 26, 210, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 5px;
+}
+
+.servicesColPriceRus {
+    color: #828282;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.servicesColPriceDate {
+    color: #f3f3f3;
+    font-size: 24px;
+}
+
+/* 
+
+SevenBlog
+
+*/
+.questions {
+    padding: 100px 190px;
+}
+
+.questionsTitle {
+    color: #121212;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.questionsCol {
+    cursor: pointer;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid rgba(130, 130, 130, 0.6);
+}
+
+.questionsCol:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.questionsColContent {
+    display: flex;
+    align-items: center;
+}
+
+.questionsColHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questionsColNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+
+    color: #f3f3f3;
+    font-size: 32px;
+
+    background: linear-gradient(
+        88deg,
+        rgba(252, 0, 255, 1) 3%,
+        rgba(29, 26, 210, 1) 100%
+    );
+}
+
+.questionsColTitle {
+    color: #828282;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.questionsColBtn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.questionsColBtn::after,
+.questionsColBtn::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(130, 130, 130, 0.6);
+
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.questionsColBtn::before {
+    transform: rotate(90deg);
+}
+
+.questionsColBtn.active::after {
+    background-color: rgba(29, 26, 210, 1);
+}
+
+.questionsColBtn.active::before {
+    background-color: rgba(29, 26, 210, 1);
+}
+
+.questionsColBtn.active {
+    animation: questionsRotate 5s linear infinite;
+}
+
+@keyframes questionsRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.questionsColFooter {
+    margin: 30px 0 10px 20px;
+    color: rgba(130, 130, 130, 0.6);
+    font-size: 16px;
+
+    display: none;
+}
+
+.questionsColFooter p {
+    margin-bottom: 15px;
+}
+
+.questionsColFooter.active {
+    display: block;
+}
+
+/* 
+
+EightBlog
+
+*/
+.eightBlog {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+        88deg,
+        rgba(252, 0, 255, 1) 3%,
+        rgba(29, 26, 210, 1) 100%
+    );
+}
+
+.connection {
+    position: relative;
+    padding: 50px 190px;
+}
+
+.connectionImg img {
+    position: absolute;
+    max-width: 400px;
+    max-height: 300px;
+    top: -25%;
+    right: 10%;
+    z-index: 1;
+}
+
+.connectionTitle {
+    color: #f3f3f3;
+    font-size: 36px;
+
+    margin-bottom: 30px;
+}
+
+.connectionLinks {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.connectinoLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.connectinoLink:hover {
+    transform: scale(1.05);
+}
+
+.connectinoLinkImg {
+    width: 30px;
+    height: 30px;
+}
+
+.connectinoLinkText {
+    color: #121212;
+    font-size: 16px;
+
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
