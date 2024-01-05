@@ -4,7 +4,7 @@
         <div class="footerWrapper">
             <div class="footerRow">
                 
-                <div class="footerCol">
+                <div class="footerCol wow animate__animated animate__fadeInUp">
                     <div class="footerTitle">
                         <img src="./assets/images/logo.png" alt="">
                     </div>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <div class="footerCol">
+                <div class="footerCol wow animate__animated animate__fadeInUp">
                     <div class="footerColTitle">
                         Быстрые ссылки
                     </div>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="footerCol">
+                <div class="footerCol wow animate__animated animate__fadeInUp">
                     <div class="footerColTitle txt">
                         Мой услуги
                     </div>
@@ -96,7 +96,7 @@
                 </div>
 
                 
-                <div class="footerCol">
+                <div class="footerCol wow animate__animated animate__fadeInUp">
                     <div class="footerColTitle txt">
                         Напиши мне)
                     </div>
@@ -131,7 +131,7 @@
 
             </div>
         </div>
-        <div class="footerInfo">
+        <div class="footerInfo wow animate__animated animate__fadeInUp">
             <div class="footerInfoLeft">
                 © 2024 VALWeb. Все права защищены.
             </div>
