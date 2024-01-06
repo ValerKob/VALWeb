@@ -258,7 +258,7 @@
       </div>
       <div class="fiveCasesRow">
 
-        <div class="fiveCasesCol fiveCasesCol-1 wow animate__animated animate__fadeInUp">
+        <div class="fiveCasesCol fiveCasesCol_1 wow animate__animated animate__fadeInUp">
           <a href="https://schoolcoloristic.ru/" target="_blank">
             <div class="fiveImg">
               <img src="./assets/images/cases/SchoolColoristics.jpg" alt="">
@@ -277,70 +277,73 @@
               </div>
             </div>
           </a>
+          <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
+            <a href="https://www.figma.com/file/0NVQheMx3z0ffxaeQfuOta/%D0%A1%D0%B0%D0%B9%D1%82-IT-%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8?type=design&node-id=0%3A1&mode=dev" target="_blank">
+              <div class="fiveImg">
+                <img src="./assets/images/cases/logo.jpg" alt="">
+              </div>
+              <div class="fiveContent">
+                <div class="fiveText">
+                  <div class="caseTitle txt">
+                    Logo (Figma)
+                  </div>
+                  <div class="caseTupe txt">
+                    Корпоративный сайт
+                  </div>
+                </div>
+                <div class="caseBtn">
+                  <div class="caseBtnArrow"></div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
-          <a href="https://noproblem.ru/" target="_blank">
-            <div class="fiveImg">
-              <img src="./assets/images/cases/noproblem.jpg" alt="">
-            </div>
-            <div class="fiveContent">
-              <div class="fiveText">
-                <div class="caseTitle txt">
-                  Noproblem
+        
+
+       
+          <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
+            <a href="https://noproblem.ru/" target="_blank">
+              <div class="fiveImg">
+                <img src="./assets/images/cases/noproblem.jpg" alt="">
+              </div>
+              <div class="fiveContent">
+                <div class="fiveText">
+                  <div class="caseTitle txt">
+                    Noproblem
+                  </div>
+                  <div class="caseTupe txt">
+                    Корпоративный сайт
+                  </div>
                 </div>
-                <div class="caseTupe txt">
-                  Корпоративный сайт
+                <div class="caseBtn">
+                  <div class="caseBtnArrow"></div>
                 </div>
               </div>
-              <div class="caseBtn">
-                <div class="caseBtnArrow"></div>
+            </a>
+          <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
+            <a href="https://www.figma.com/file/wZeJhB914Po1YqZVmXQ69f/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0-%E2%84%96-7?type=design&node-id=0%3A1&mode=design&t=MeSAZeWYNhGK2fhw-1" target="_blank">
+              <div class="fiveImg">
+                <img src="./assets/images/cases/School.jpg" alt="">
               </div>
-            </div>
-          </a>
+              <div class="fiveContent">
+                <div class="fiveText">
+                  <div class="caseTitle txt">
+                    School7 (Figma)
+                  </div>
+                  <div class="caseTupe txt">
+                    Корпоративный сайт
+                  </div>
+                </div>
+                <div class="caseBtn">
+                  <div class="caseBtnArrow"></div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="fiveCasesCol fiveCasesCol-3 wow animate__animated animate__fadeInUp">
-          <a href="https://www.figma.com/file/0NVQheMx3z0ffxaeQfuOta/%D0%A1%D0%B0%D0%B9%D1%82-IT-%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8?type=design&node-id=0%3A1&mode=dev" target="_blank">
-            <div class="fiveImg">
-              <img src="./assets/images/cases/logo.jpg" alt="">
-            </div>
-            <div class="fiveContent">
-              <div class="fiveText">
-                <div class="caseTitle txt">
-                  Logo (Figma)
-                </div>
-                <div class="caseTupe txt">
-                  Корпоративный сайт
-                </div>
-              </div>
-              <div class="caseBtn">
-                <div class="caseBtnArrow"></div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
-          <a href="https://schoolcoloristic.ru/" target="_blank">
-            <div class="fiveImg">
-              <img src="./assets/images/cases/School.jpg" alt="">
-            </div>
-            <div class="fiveContent">
-              <div class="fiveText">
-                <div class="caseTitle txt">
-                  School7 (Figma)
-                </div>
-                <div class="caseTupe txt">
-                  Корпоративный сайт
-                </div>
-              </div>
-              <div class="caseBtn">
-                <div class="caseBtnArrow"></div>
-              </div>
-            </div>
-          </a>
-        </div>
+    
 
       </div>
     </div>

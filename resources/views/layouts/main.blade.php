@@ -34,6 +34,7 @@
 
     <!-- JS -->
     <script src="./assets/js/links.js"></script>
+    <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/question.js"></script>
     <script src="./assets/js/sticky.js"></script>
 

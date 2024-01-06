@@ -6,6 +6,7 @@
     width: 100%;
     height: 900px;
     background: #121212;
+    overflow: hidden;
 }
 
 .svgTitle {
@@ -18,18 +19,20 @@
     position: absolute;
     height: 100%;
     z-index: 2;
-    margin: 0 190px;
+    padding: 0 190px;
     padding-top: 100px;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    gap: 100px;
 }
 
 .infoTitle {
     position: relative;
 
-    max-width: 408px;
+    width: 408px;
     margin-bottom: 50px;
     font-size: 40px;
 }
@@ -238,9 +241,10 @@
 
 /* Right Info BLog */
 .infoRight {
-    margin-top: -190px;
-    padding-left: 190px;
+    display: flex;
+    justify-content: end;
 
+    margin-top: -190px;
     cursor: pointer;
 }
 
@@ -337,7 +341,7 @@ TwoBlog
 
 .topBlog {
     max-width: 100%;
-    height: 550px;
+    height: 100%;
     background-color: #f3f3f3;
 }
 
@@ -346,7 +350,7 @@ TwoBlog
 }
 
 .advantagesTitle {
-    width: 530px;
+    max-width: 530px;
     font-size: 36px;
     color: #121212;
 
@@ -368,10 +372,16 @@ TwoBlog
 .advantagesRow {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .advantagesCol {
     max-width: 320px;
+}
+
+.advantagesCol:last-child {
+    margin-right: 0;
 }
 
 .advantagesImg {
@@ -399,7 +409,7 @@ Free Blog
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 990px;
+    height: 100%;
     background: #121212;
 }
 
@@ -496,6 +506,7 @@ Free Blog
 
 .aboutRight {
     max-width: 510px;
+    margin-left: 25px;
 }
 
 .aboutTilte {
@@ -530,9 +541,10 @@ Card
 .cardWrapper {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -100%);
-    width: 1200px;
-    height: 240px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+    min-height: 240px;
     flex-shrink: 0;
     border-radius: 16px;
 
@@ -546,12 +558,18 @@ Card
 .cardRow {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
 
     padding: 40px 70px;
 }
 
 .cardCol {
     max-width: 230px;
+    margin: 0 auto;
+
     text-align: center;
 
     cursor: pointer;
@@ -578,7 +596,7 @@ Card
 /* Five Blog */
 .fiveBlog {
     width: 100%;
-    height: 1500px;
+    height: 100%;
     background: #f3f3f3;
 }
 
@@ -605,18 +623,18 @@ Card
 }
 
 .fiveCasesRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 40px;
-}
+    display: flex;
+    justify-content: space-between;
 
-.fiveCasesCol-3 {
-    margin-top: -260px;
+    margin-top: 40px;
 }
 
 .fiveCasesCol {
     max-width: 500px;
+}
+
+.fiveCasesCol_1 {
+    margin-right: 20px;
 }
 
 .fiveContent {
@@ -635,6 +653,7 @@ Card
 }
 
 .fiveImg img {
+    width: 100%;
     transition: all 0.7s ease-in-out 0s;
 }
 
@@ -704,7 +723,8 @@ SixBlog
 */
 .sixBlog {
     width: 100%;
-    height: 1700px;
+    height: auto;
+    min-height: 1700px;
     background-color: #121212;
 }
 
@@ -713,13 +733,16 @@ SixBlog
 }
 
 .servicesRowServ {
+    max-width: 500px;
+
     display: flex;
     flex-direction: column;
 }
 
 .servicesRow {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
 .servicesCol {
@@ -736,8 +759,6 @@ SixBlog
 }
 
 .servicesInfoText {
-    max-width: 500px;
-
     color: #828282;
     font-size: 20px;
 
@@ -766,11 +787,6 @@ SixBlog
 .stop {
     position: relative;
     z-index: 10;
-}
-
-.servicesColTypes {
-    width: 100%;
-    width: 500px;
 }
 
 .servicesColType {
@@ -822,11 +838,13 @@ SixBlog
     font-size: 16px;
 
     margin-bottom: 10px;
+    text-align: end;
 }
 
 .servicesColPriceDate {
     color: #f3f3f3;
     font-size: 24px;
+    text-align: end;
 }
 
 /* 
@@ -972,7 +990,7 @@ EightBlog
 */
 .eightBlog {
     width: 100%;
-    height: 300px;
+    height: 100%;
     background: linear-gradient(
         88deg,
         rgba(252, 0, 255, 1) 3%,
@@ -995,6 +1013,9 @@ EightBlog
 }
 
 .connectionTitle {
+    position: relative;
+    z-index: 2;
+
     color: #f3f3f3;
     font-size: 36px;
 
@@ -1006,7 +1027,7 @@ EightBlog
     z-index: 2;
     max-width: 700px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 220px);
     gap: 20px;
 }
 
@@ -1038,4 +1059,258 @@ EightBlog
 
     margin-left: 20px;
     transition: all 0.3s ease-in-out 0s;
+}
+
+/* 
+
+Media 
+
+*/
+
+@media (max-width: 1250px) {
+    /* Main */
+    .services,
+    .fiveCases,
+    .about,
+    .advantages,
+    .questions,
+    .connection,
+    .info {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* fiveCases */
+    .fiveCases {
+        padding-top: 350px;
+    }
+}
+
+@media (max-width: 960px) {
+    /* Main */
+    .services,
+    .fiveCases,
+    .about,
+    .advantages,
+    .questions,
+    .connection,
+    .info {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* Info */
+    .infoTitle {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 120px;
+    }
+
+    .carouselInfoWrapper {
+        bottom: -40%;
+        right: -30%;
+    }
+
+    /* About */
+    .aboutEllipse,
+    .aboutEllipseWrapperImg {
+        width: 280px;
+        height: 400px;
+    }
+
+    .aboutEllipseImg {
+        top: -110px;
+        left: -55px;
+    }
+
+    /* Services */
+    .servicesRow {
+        display: block;
+    }
+
+    .sticky {
+        position: relative;
+        margin-top: -190px;
+    }
+
+    /* Connection */
+    .connectionImg img {
+        width: 350px;
+        height: 275px;
+    }
+}
+
+@media (max-width: 675px) {
+    /* fiveCases */
+    .fiveCasesRow {
+        flex-wrap: wrap;
+    }
+
+    .fiveCasesCol_1 {
+        margin-right: 0;
+    }
+
+    .infoLeft {
+        position: relative;
+        z-index: 2;
+    }
+
+    .infoRight {
+        position: relative;
+        top: -15%;
+        left: -70%;
+        z-index: 1;
+    }
+
+    /* About */
+    .aboutEllipse {
+        position: absolute;
+        top: 110px;
+        right: 30px;
+        z-index: 1;
+    }
+
+    .aboutRight {
+        position: relative;
+        z-index: 2;
+
+        margin-left: 0;
+    }
+
+    .aboutEllipseImg {
+        transform: scale(-1, 1);
+    }
+
+    .aboutTilte {
+        margin-bottom: 300px;
+    }
+
+    .aboutInfo {
+        color: #f3f3f3;
+    }
+}
+
+@media (max-width: 640px) {
+    /* fiveCases */
+    .cardWrapper {
+        transform: translate(-50%, -40%);
+    }
+
+    .fiveCases {
+        padding-top: 425px;
+    }
+}
+
+@media (max-width: 560px) {
+    /* fiveCases */
+    .cardWrapper {
+        transform: translate(-50%, -30%);
+    }
+
+    .fiveCases {
+        padding-top: 600px;
+    }
+
+    /* Connection */
+    .connectionImg img {
+        width: 200px;
+        height: 150px;
+        top: -10%;
+        right: 0%;
+    }
+}
+
+@media (max-width: 525px) {
+    /* Main */
+    .services,
+    .fiveCases,
+    .about,
+    .advantages,
+    .questions,
+    .connection,
+    .info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    /* Main */
+    .advantages,
+    .about,
+    .fiveCases,
+    .services,
+    .questions {
+        padding: 40px 20px;
+    }
+
+    .fiveCases {
+        padding-top: 650px;
+    }
+
+    .about {
+        padding-bottom: 150px;
+    }
+
+    /* Title */
+    .titleBlog {
+        height: 700px;
+    }
+
+    .infoTitle {
+        width: 250px;
+        font-size: 32px;
+        margin-bottom: 90px;
+    }
+
+    .infoText {
+        margin-bottom: 40px;
+    }
+
+    .carouselInfoWrapper {
+        bottom: -40%;
+        right: -57%;
+    }
+
+    .infoEllipse,
+    .infoEllipseImg,
+    .infoEllipseWrapperImg {
+        width: 250px;
+        height: 300px;
+    }
+
+    .infoEllipseImg {
+        top: 0%;
+        left: -10%;
+    }
+
+    .infoRight {
+        top: -20%;
+        left: -90%;
+    }
+
+    /* About */
+    .aboutEllipse {
+        top: 100px;
+        right: 0px;
+    }
+
+    /* Questions */
+    .questionsColTitle {
+        max-width: 195px;
+    }
+
+    .questionsColTitle {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* About */
+    .aboutRight {
+        max-width: 260px;
+    }
 }

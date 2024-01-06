@@ -25,7 +25,7 @@ header {
 }
 
 .navbar__list ul li {
-    color: rgba(243, 243, 243, 0.60);
+    color: rgba(243, 243, 243, 0.6);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -41,27 +41,228 @@ header {
 
 .navbar__list ul li a::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 120%;
     left: 0;
     z-index: 1;
     width: 0;
     height: 2px;
-    background: rgba(243, 243, 243, 0.60);
-    transition: all .3s ease-in-out 0s;
+    background: rgba(243, 243, 243, 0.6);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .navbar__list ul li a:hover::after {
     width: 100%;
 }
 .navbar__list ul li a.active {
-    color: #F3F3F3;
+    color: #f3f3f3;
 }
 .navbar__list ul li a.active::after {
-    background: #F3F3F3;
+    background: #f3f3f3;
     width: 100%;
 }
 
 .navbar__list ul li:last-child {
     margin-right: 0;
+}
+
+/* 
+
+Burger
+
+*/
+
+.burgerMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerMenu::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.burgerMenu.active::after {
+    left: 40%;
+    opacity: 0;
+}
+
+.burger {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.burger::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.burger::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.burger.active::after {
+    transform: rotate(45deg) translate(11px, 10px);
+}
+
+.burger.active::before {
+    transform: rotate(-45deg) translate(10px, -10px);
+}
+
+.burgerWrapper {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    padding: 15px;
+    z-index: 110;
+    width: 300px;
+    height: 500px;
+    background-color: #121212;
+    box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.15);
+    border-radius: 0 0 8px 0;
+    display: none;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.burgerWrapper.active {
+    left: 0;
+}
+
+.burgerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burgerMenu2 {
+    margin-top: 10px;
+    display: none;
+}
+
+.burgerLinks {
+    margin: 30px 0 0 20px;
+}
+
+.burgerLinks li a {
+    position: relative;
+    color: rgba(243, 243, 243, 0.6);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.burgerLinks li {
+    margin-bottom: 25px;
+}
+
+.burgerLinks li a::after {
+    position: absolute;
+    content: "";
+    top: 120%;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 2px;
+    background: rgba(243, 243, 243, 0.6);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.burgerLinks li a:hover::after {
+    width: 100%;
+}
+.burgerLinks li a.active {
+    color: #f3f3f3;
+}
+.burgerLinks li a.active::after {
+    background: #f3f3f3;
+    width: 100%;
+}
+
+.burgerLinks li:last-child {
+    margin-right: 0;
+}
+
+.burgerTitler {
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 40px 0 15px;
+}
+
+.burgerSocial {
+    width: 150px;
+}
+
+@media (max-width: 1250px) {
+    /* Main */
+    .navbar {
+        padding: 16px 80px 0;
+    }
+}
+
+@media (max-width: 960px) {
+    /* Main */
+    .navbar {
+        padding: 16px 40px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .burgerMenu {
+        display: flex;
+    }
+
+    .navbar__list,
+    .burgerMenu2 {
+        display: none;
+    }
+
+    .burgerWrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 525px) {
+    /* Main */
+    .navbar {
+        padding: 16px 20px 0;
+    }
+}
+
+@media (max-width: 385px) {
+    .burgerMenu2 {
+        display: block;
+    }
 }
