@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('', 'pages.main.index')->name('main');
+// DATA
+$addApp = 0;
 
-// Register
+// View
+Route::view('', 'pages.main.index', compact('addApp'))->name('main');
+
+// POST
+// Register 
 Route::post('addApplications', [ApplicationCotroller::class, 'addApplications'])->name('addApplications');

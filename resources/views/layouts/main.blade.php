@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
     <title>@yield('title')</title>
+    <meta name="description" content="VALWeb">
+    <meta name="keywords" content="">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">

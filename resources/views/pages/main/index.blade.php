@@ -4,6 +4,30 @@
 
 @section('content')
 {{-- SGlav BLog --}}
+
+<div class="modalThanks" id="modalThanks">
+  <div class="modalThanksContent">
+    <div class="modalThanksText txt">
+      <span>Спасибо Вам Большое, за заявку!</span>
+      Я свяжусь с Вами, как только смогу ;)
+    </div>
+  </div>
+</div>
+@if($addApp == 3)
+  <script>
+  let modalThanks = document.getElementById('modalThanks')
+  function addModalThanks() {
+    modalThanks.classList.add("active");
+  }
+  
+  function rewmoveModalThanks() {
+    modalThanks.classList.remove("active");
+  }
+
+  setTimeout(addModalThanks, 1000);
+  setTimeout(rewmoveModalThanks, 4000);
+  </script>
+@endif
 <div class="modal" id="modal">
   <div class="modalContent">
     <div class="modalCloseHeader">
@@ -11,27 +35,34 @@
     </div>
     <div class="modalContentWrapper ">
       <div class="modalTitle txt"><span>Оставьте вашу заявку</span>, и я свяжусь с вами, так быстро, как только смогу ;)</div>
+      @if($addApp == 1) 
+        <div class="modalError txt">Пожалуйста, введит необходимые данные!</div>
+      @elseif($addApp == 2)
+        <div class="modalError txt">Пожалуйста, введит необходимые данные!</div>
+      @endif
       <form class="modalForm" action="addApplications" method="POST">
-           <div class="input-container ic1">
-              <input id="firstname" class="input" type="text" placeholder=" " />
+        @csrf
+           <div class="input-container @if($addApp == 1) red @endif ic1">
+              <input id="name" class="input" type="text" name="name" placeholder=" " />
               <div class="cut"></div>
-              <label for="firstname" class="placeholder">Ваше имя*</label>
+              <label for="name" class="placeholder">Ваше имя*</label>
             </div>
-            <div class="input-container ic2">
-              <input id="tel" class="input" type="tel" placeholder=" " />
+            <div class="input-container @if($addApp == 2) red @endif ic2">
+              <input id="tel" class="input" name="phone" type="tel" placeholder=" " />
               <div class="cut cut-short"></div>
               <label for="tel" class="placeholder">Ваш Телефон*</label>
             </div>
             <div class="input-container ic2">
-              <input id="email" class="input" type="text" placeholder=" " />
+              <input id="email" class="input" name="email" type="text" placeholder=" " />
               <div class="cut cut-short"></div>
               <label for="email" class="placeholder">Ваш Email (не обязательно)</label>
             </div>
              <div class="input-container ic2 tArea">
-              <textarea id="lastname" class="input" type="text" placeholder=" "></textarea>
+              <textarea id="lastname" class="input" name="text" type="text" placeholder=" "></textarea>
               <div class="cut"></div>
               <label for="lastname" class="placeholder">Текст сообщения</label>
             </div>
+            <input id="text" class="input" name="check" type="text" value="{{$addApp}}" style="display: none;" />
           <div class="buttons">
             <button type="submit" class="blob-btn">
               Отправить
@@ -762,4 +793,5 @@
   </div>
 </section>
 {{-- EGlav Blog --}}
+{{$addApp == 0}}
 @endsection

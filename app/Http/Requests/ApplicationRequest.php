@@ -24,9 +24,9 @@ class ApplicationRequest extends FormRequest
         return [
             'name' => '',
             'email' => '',
-            'patronymic' => '',
             'phone' => '',
             'text' => '',
+            'check' => '',
         ];
     }
 }
