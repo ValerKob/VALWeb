@@ -8,6 +8,15 @@
     <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
     <title>@yield('title')</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Links -->
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
 
@@ -35,6 +44,7 @@
     <!-- JS -->
     <script src="./assets/js/links.js"></script>
     <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/question.js"></script>
     <script src="./assets/js/sticky.js"></script>
 

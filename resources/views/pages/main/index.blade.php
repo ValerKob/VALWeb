@@ -1,9 +1,65 @@
 @extends('layouts.main')
 
-@section('title', 'Home')
+@section('title', 'VALWeb')
 
 @section('content')
 {{-- SGlav BLog --}}
+<div class="modal" id="modal">
+  <div class="modalContent">
+    <div class="modalCloseHeader">
+      <div class="modalClose" id="modalClose"></div>
+    </div>
+    <div class="modalContentWrapper ">
+      <div class="modalTitle txt"><span>Оставьте вашу заявку</span>, и я свяжусь с вами, так быстро, как только смогу ;)</div>
+      <form class="modalForm" action="addApplications" method="POST">
+           <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Ваше имя*</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="tel" class="input" type="tel" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="tel" class="placeholder">Ваш Телефон*</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Ваш Email (не обязательно)</label>
+            </div>
+             <div class="input-container ic2 tArea">
+              <textarea id="lastname" class="input" type="text" placeholder=" "></textarea>
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Текст сообщения</label>
+            </div>
+          <div class="buttons">
+            <button type="submit" class="blob-btn">
+              Отправить
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
+            <br/>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                  <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
 <section class="titleBlog" id="main">
     <div class="container">
         <div class="info">
@@ -29,7 +85,7 @@
                       <span>уникальность вашего бренда.</span>
                     </div>
                     <div class="buttons wow animate__animated animate__fadeInLeft">
-                        <button class="blob-btn">
+                        <button class="blob-btn" id="openModal">
                           Связаться
                           <span class="blob-btn__inner">
                             <span class="blob-btn__blobs">
@@ -173,7 +229,7 @@
           </p>
 
            <div class="buttons btnAbout wow animate__animated animate__fadeInRight">
-                <button class="blob-btn">
+                <button class="blob-btn" id="openModal">
                   Написать
                   <span class="blob-btn__inner">
                     <span class="blob-btn__blobs">
@@ -239,7 +295,7 @@
             </div>
           </div>
 
-          <div class="cardCol wow animate__animated animate__fadeInUp">
+          <div class="cardCol wow animate__animated animate__fadeInUp" id="openModal">
             <div class="cardImg">
               <img class="animationCardImg" src="./assets/images/cards/card.svg" alt="">
             </div>

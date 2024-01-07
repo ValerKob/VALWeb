@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApplicationCotroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('', 'pages.main.index')->name('main');
+
+// Register
+Route::post('addApplications', [ApplicationCotroller::class, 'addApplications'])->name('addApplications');
