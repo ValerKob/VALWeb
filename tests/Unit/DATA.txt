@@ -1,0 +1,9 @@
+IP: 185.114.247.170
+Хост: vh428.timeweb.ru
+
+Login: cc11307
+Pass: b@2c9$xs6t1y
+
+DB
+Login: cj19741_schoolco
+Pass: qR2JY59W
