@@ -216,7 +216,7 @@
       <div class="aboutLeft wow animate__animated animate__fadeInLeft">
         <div class="aboutEllipse">
             <div class="aboutEllipseWrapperImg">
-              <img class="aboutEllipseImg" src="./assets/images/valaboutg.jpg" alt=""/>
+              <img class="aboutEllipseImg" src="./assets/images/valabout.jpg" alt=""/>
             </div>
         </div>
       </div>
