@@ -232,7 +232,7 @@
           <p>
             Привет! Меня зовут Валерий и я являюсь FullStack - веб разработчиком.
             Мне 20 лет, начал изучать программирование с 16 лет, работал в 
-            нескольких IT-компаниях, а так же работаю на врилансе!
+            нескольких IT-компаниях, а так же работаю на фрилансе!
           </p>
           <p>
             Больше всего я люблю выделяться, веть это самое главное и
@@ -480,7 +480,7 @@
                   <div class="servicesColPrice txt">
                     850$
                   </div>
-                  <div class="servicesColPriceRus txt">
+                  <div class="servicesColPriceRus txt" id="price1">
                     (76 235,06 руб.)
                   </div>
                   <div class="servicesColPriceDate txt">
@@ -512,7 +512,7 @@
                   <div class="servicesColPrice txt">
                     999$
                   </div>
-                  <div class="servicesColPriceRus txt">
+                  <div class="servicesColPriceRus txt" id="price2">
                     (89 598,61 руб.)
                   </div>
                   <div class="servicesColPriceDate txt">
@@ -545,8 +545,8 @@
                   <div class="servicesColPrice txt">
                     1150$
                   </div>
-                  <div class="servicesColPriceRus txt">
-                    (103 141,55 руб.)
+                  <div class="servicesColPriceRus txt" id="price3">
+                    (103 141,55 руб.) 
                   </div>
                   <div class="servicesColPriceDate txt">
                     от 20 дней
@@ -579,7 +579,7 @@
                   <div class="servicesColPrice txt">
                     1700$
                   </div>
-                  <div class="servicesColPriceRus txt">
+                  <div class="servicesColPriceRus txt" id="price4">
                     (103 141,55 руб.)
                   </div>
                   <div class="servicesColPriceDate txt">

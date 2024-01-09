@@ -49,6 +49,7 @@
     <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/question.js"></script>
     <script src="./assets/js/sticky.js"></script>
+    <script src="./assets/js/curse.js"></script>
 
     <!-- JS WOW -->
     <script src="./assets/js/wow.min.js"></script>
