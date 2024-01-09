@@ -792,6 +792,5 @@
     </div>
   </div>
 </section>
-{{-- EGlav Blog --}}
-{{$addApp == 0}}
+<!-- EndGlav Blog -->
 @endsection
