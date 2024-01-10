@@ -3,7 +3,7 @@
     <div class="container">
         <div class="navbar">
             <div class="navbar__brand">
-                <img src="./assets/images/Logo.png" alt="">
+                <img src="./assets/images/logo.png" alt="">
             </div>
             <div class="navbar__list">
                 <ul id="nav">

@@ -17,7 +17,7 @@
             <label for="name" class="placeholder">Login</label>
           </div>
           <div class="input-container ic2">
-            <input id="tel" class="input" name="password" type="tel" placeholder=" " />
+            <input id="tel" class="input" name="password" type="password" placeholder=" " />
             <div class="cut cutAdmin cut-short"></div>
             <label for="tel" class="placeholder">Password</label>
           </div>
