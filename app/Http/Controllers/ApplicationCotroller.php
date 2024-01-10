@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ApplicationRequest;
+use App\Models\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -41,5 +42,13 @@ class ApplicationCotroller extends Controller
             $addApp = 3;
             return view('pages.main.index', compact('addApp'));
         }
+    }
+
+    public function deleteApplications(ApplicationRequest $req) {
+        $id = $req->id;
+        Application::find($id)->delete();
+
+        $items = DB::table('applications')->get();
+        return view('pages.admin.admin', compact('items'));
     }
 }

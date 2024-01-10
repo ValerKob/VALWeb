@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApplicationCotroller;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,11 @@ $addApp = 0;
 
 // View
 Route::view('', 'pages.main.index', compact('addApp'))->name('main');
+Route::view('adminM&b7P%EQ', 'pages.admin.index')->name('adminM&b7P%EQ');
 
 // POST
 // Register 
 Route::post('addApplications', [ApplicationCotroller::class, 'addApplications'])->name('addApplications');
+Route::post('deleteApplications', [ApplicationCotroller::class, 'deleteApplications'])->name('deleteApplications');
+Route::post('signInAdmin', [LoginController::class, 'signInAdmin'])->name('signInAdmin');
+

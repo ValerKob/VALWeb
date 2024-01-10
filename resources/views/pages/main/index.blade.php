@@ -385,10 +385,7 @@
             </a>
           </div>
         </div>
-
         
-
-       
           <div class="fiveCasesCol wow animate__animated animate__fadeInUp">
             <a href="https://noproblem.ru/" target="_blank">
               <div class="fiveImg">
@@ -429,9 +426,6 @@
             </a>
           </div>
         </div>
-
-    
-
       </div>
     </div>
   </div>

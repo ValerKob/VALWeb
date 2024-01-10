@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/mainPage.css">
+    <link rel="stylesheet" href="./assets/css/admin/admin.css">
 </head>
 
 <body>
