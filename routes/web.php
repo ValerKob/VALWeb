@@ -20,7 +20,7 @@ $addApp = 0;
 
 // View
 Route::view('', 'pages.main.index', compact('addApp'))->name('main');
-Route::view('adminM&b7P%EQ', 'pages.admin.index')->name('adminM&b7P%EQ');
+Route::view('admin', 'pages.admin.index')->name('admin');
 
 // POST
 // Register 
