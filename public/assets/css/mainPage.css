@@ -963,6 +963,13 @@ SixBlog
     flex-direction: column;
 }
 
+.servicesRowServ.aside2 {
+    max-width: 500px;
+
+    display: none;
+    flex-direction: column;
+}
+
 .servicesRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1371,7 +1378,7 @@ Media
         display: none;
     }
 
-    .aside2 {
+    .servicesRowServ.aside2 {
         display: block;
     }
 
