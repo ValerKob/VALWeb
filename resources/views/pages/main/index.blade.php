@@ -449,7 +449,7 @@
             </div>
           </div>
         </div>
-        <div class="servicesRowServ wow animate__animated animate__fadeInLeft" id="aside2"> 
+        <div class="servicesRowServ aside2 wow animate__animated animate__fadeInLeft"> 
           <div class="servicesTitle txt">
             Мой услуги!
           </div>

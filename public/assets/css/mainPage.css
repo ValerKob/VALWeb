@@ -977,7 +977,7 @@ SixBlog
     display: block;
 }
 
-#aside2 {
+.aside2 {
     display: none;
 }
 
@@ -1371,7 +1371,7 @@ Media
         display: none;
     }
 
-    #aside2 {
+    .aside2 {
         display: block;
     }
 
