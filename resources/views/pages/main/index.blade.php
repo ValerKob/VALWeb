@@ -449,6 +449,21 @@
             </div>
           </div>
         </div>
+        <div class="servicesRowServ wow animate__animated animate__fadeInLeft" id="aside2"> 
+          <div class="servicesTitle txt">
+            Мой услуги!
+          </div>
+          <div class="servicesCol">
+            <div class="servicesInfoText txt">
+              Каждый сайт решает ряд задач. От сложности, 
+              времени и уровня их исполнения зависит стоимость проекта.
+            </div>
+            <div class="servicesInfoText txt">
+              Поэтому указан нижний порог цен. Чтобы оценить примерный объём работ, 
+              заполните <span>заявку</span> или просто <span>напишите мне</span>
+            </div>
+          </div>
+        </div>
         <div class="servicesCol" id="article">
           <div class="servicesColTypes">
 

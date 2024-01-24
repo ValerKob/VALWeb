@@ -973,6 +973,10 @@ SixBlog
     margin-top: 50px;
 }
 
+#aside2 {
+    display: none;
+}
+
 .servicesColTypes {
     margin-top: 44px;
 }
@@ -1357,6 +1361,14 @@ Media
     .sticky {
         position: relative;
         margin-top: -190px;
+    }
+
+    #aside1 {
+        display: none;
+    }
+
+    #aside2 {
+        display: block;
     }
 
     /* Connection */

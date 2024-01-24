@@ -1,5 +1,5 @@
 (function () {
-    if (window.innerWidth >= 960) {
+    if (window.innerWidth > 960) {
         var a = document.querySelector("#aside1"),
             b = null,
             P = 190;
