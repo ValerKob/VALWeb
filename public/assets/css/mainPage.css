@@ -974,6 +974,7 @@ SixBlog
 }
 
 #aside2 {
+    display: none;
 }
 
 .servicesColTypes {
@@ -1367,6 +1368,7 @@ Media
     }
 
     #aside2 {
+        display: block;
     }
 
     /* Connection */
