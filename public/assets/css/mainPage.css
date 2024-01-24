@@ -974,6 +974,10 @@ SixBlog
 }
 
 #aside2 {
+    display: block;
+}
+
+#aside2 {
     display: none;
 }
 
